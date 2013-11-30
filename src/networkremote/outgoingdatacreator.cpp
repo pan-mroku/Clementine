@@ -50,11 +50,6 @@ void OutgoingDataCreator::SetClients(QList<RemoteClient*>* clients) {
   // After we got some clients, start the keep alive timer
   // Default: every 10 seconds
   keep_alive_timer_->start(keep_alive_timeout_);
-  
-  // Check if we need to start the track position timer
-  if (app_->player()->engine()->state() == Engine::Playing) {
-    track_position_timer_->start(1000);
-  }
 
   // Create the song position timer
   track_position_timer_ = new QTimer(this);
@@ -289,6 +284,12 @@ void OutgoingDataCreator::SendFirstData(bool send_playlist_songs) {
   // then the current volume
   VolumeChanged(app_->player()->GetVolume());
 
+  // Check if we need to start the track position timer
+  if (!track_position_timer_->isActive() &&
+      app_->player()->engine()->state() == Engine::Playing) {
+    track_position_timer_->start(1000);
+  }
+
   // And the current track position
   UpdateTrackPosition();
 
@@ -352,6 +353,7 @@ void OutgoingDataCreator::CreateSong(
     song_metadata->set_is_local(song.url().scheme() == "file");
     song_metadata->set_filename(DataCommaSizeFromQString(song.basefilename()));
     song_metadata->set_file_size(song.filesize());
+    song_metadata->set_rating(song.rating());
 
     // Append coverart
     if (!art.isNull()) {
@@ -533,7 +535,7 @@ void OutgoingDataCreator::SendLyrics(int id, const SongInfoFetcher::Result& resu
 
   foreach (const CollapsibleInfoPane::Data& data, result.info_) {
     // If the size is zero, do not send the provider
-    SongInfoTextView* editor = qobject_cast<SongInfoTextView*>(data.contents_);
+    UltimateLyricsLyric* editor = qobject_cast<UltimateLyricsLyric*>(data.content_object_);
     if (editor->toPlainText().length() == 0)
       continue;
 
@@ -719,12 +721,12 @@ void OutgoingDataCreator::SendLibrary(RemoteClient *client) {
 
   // Attach this file to the database
   Database::AttachedDatabase adb(temp_file_name, "", true);
-  app_->database()->AttachDatabase("songs_export", adb);
   QSqlDatabase db(app_->database()->Connect());
+
+  app_->database()->AttachDatabaseOnDbConnection("songs_export", adb, db);
 
   // Copy the content of the song table to this temporary database
   QSqlQuery q(QString("create table songs_export.songs as SELECT * FROM songs;"), db);
-  q.exec();
 
   if (app_->database()->CheckErrors(q)) return;
 

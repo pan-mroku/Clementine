@@ -26,7 +26,10 @@
 #include "widgets/renametablineedit.h"
 #include "widgets/favoritewidget.h"
 
+#include <QCheckBox>
 #include <QContextMenuEvent>
+#include <QDialogButtonBox>
+#include <QGridLayout>
 #include <QInputDialog>
 #include <QMenu>
 #include <QMessageBox>
@@ -164,19 +167,52 @@ void PlaylistTabBar::Close() {
 
   const bool ask_for_delete = s.value("warn_close_playlist", true).toBool();
 
-  if (ask_for_delete && !manager_->IsPlaylistFavorite(playlist_id)) {
-    if (QMessageBox::question(this,
-          tr("Remove playlist"),
-          tr("You are about to remove a playlist which is not part of your favorite playlists: "
-             "the playlist will be deleted (this action cannot be undone). \n"
-             "Are you sure you want to continue?"),
-          QMessageBox::Yes, QMessageBox::Cancel) != QMessageBox::Yes) {
-        return;
-      }
+  if (ask_for_delete && !manager_->IsPlaylistFavorite(playlist_id) &&
+      !manager_->playlist(playlist_id)->GetAllSongs().empty()) {
+    QMessageBox confirmation_box;
+    confirmation_box.setWindowIcon(QIcon(":/icon.png"));
+    confirmation_box.setWindowTitle(tr("Remove playlist"));
+    confirmation_box.setIcon(QMessageBox::Question);
+    confirmation_box.setText(
+        tr("You are about to remove a playlist which is not part of your favorite playlists: "
+           "the playlist will be deleted (this action cannot be undone). \n"
+           "Are you sure you want to continue?"));
+    confirmation_box.setStandardButtons(QMessageBox::Yes | QMessageBox::Cancel);
+
+    QCheckBox dont_prompt_again(tr("Warn me when closing a playlist tab"), &confirmation_box);
+    dont_prompt_again.setChecked(ask_for_delete);
+    dont_prompt_again.blockSignals(true);
+    dont_prompt_again.setToolTip(
+        tr("This option can be changed in the \"Behavior\" preferences"));
+
+    QGridLayout* grid = qobject_cast<QGridLayout*>(confirmation_box.layout());
+    QDialogButtonBox* buttons = confirmation_box.findChild<QDialogButtonBox*>();
+    if (grid && buttons) {
+        const int index = grid->indexOf(buttons);
+        int row, column, row_span, column_span = 0;
+        grid->getItemPosition(index, &row, &column, &row_span, &column_span);
+        QLayoutItem* buttonsItem = grid->takeAt(index);
+        grid->addWidget(&dont_prompt_again, row, column, row_span, column_span,
+                        Qt::AlignLeft | Qt::AlignTop);
+        grid->addItem(buttonsItem, ++row, column, row_span, column_span);
+    } else {
+      confirmation_box.addButton(&dont_prompt_again, QMessageBox::ActionRole);
+    }
+
+    if (confirmation_box.exec() != QMessageBox::Yes) {
+      return;
+    }
+
+    // If user changed the pref, save the new one
+    if (dont_prompt_again.isChecked() != ask_for_delete) {
+      s.setValue("warn_close_playlist", dont_prompt_again.isChecked());
+    }
   }
 
-  // Just hide the tab from the UI - don't delete it completely (it can still
-  // be resurrected from the Playlists tab).
+  // Close the playlist. If the playlist is not a favorite playlist, it will be
+  // deleted, as it will not be visible after being closed. Otherwise, the tab
+  // is closed but the playlist still exists and can be resurrected from the
+  // "Playlists" tab.
   emit Close(playlist_id);
 
   // Select the nearest tab.

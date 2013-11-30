@@ -77,6 +77,9 @@ IncomingDataParser::IncomingDataParser(Application* app)
   connect(this, SIGNAL(Close(int)),
           app_->playlist_manager(), SLOT(Close(int)));
 
+  connect(this, SIGNAL(RateCurrentSong(double)),
+          app_->playlist_manager(), SLOT(RateCurrentSong(double)));
+
 #ifdef HAVE_LIBLASTFM
   connect(this, SIGNAL(Love()),
           InternetModel::Service<LastFMService>(), SLOT(Love()));
@@ -180,6 +183,9 @@ void IncomingDataParser::Parse(const pb::remote::Message& msg) {
     case pb::remote::GET_LIBRARY:
       emit SendLibrary(client);
       break;
+    case pb::remote::RATE_SONG:
+      RateSong(msg);
+      break;
     default: break;
   }
 }
@@ -252,14 +258,16 @@ void IncomingDataParser::InsertUrls(const pb::remote::Message& msg) {
 }
 
 void IncomingDataParser::RemoveSongs(const pb::remote::Message& msg) {
-  const pb::remote::RequestRemoveSongs& request = msg.request_remove_songs();
+    const pb::remote::RequestRemoveSongs& request = msg.request_remove_songs();
 
-  // Extract urls
-  QList<int> songs;
-  std::copy(request.songs().begin(), request.songs().end(), songs.begin());
+    // Extract urls
+    QList<int> songs;
+    for (int i = 0; i<request.songs().size();i++) {
+        songs.append(request.songs(i));
+    }
 
-  // Insert the urls
-  emit RemoveSongs(request.playlist_id(), songs);
+    // Insert the urls
+    emit RemoveSongs(request.playlist_id(), songs);
 }
 
 void IncomingDataParser::ClientConnect(const pb::remote::Message& msg) {
@@ -291,4 +299,9 @@ void IncomingDataParser::OpenPlaylist(const pb::remote::Message &msg) {
 
 void IncomingDataParser::ClosePlaylist(const pb::remote::Message &msg) {
   emit Close(msg.request_close_playlist().playlist_id());
+}
+
+void IncomingDataParser::RateSong(const pb::remote::Message &msg) {
+  double rating = (double) msg.request_rate_song().rating();
+  emit RateCurrentSong(rating);
 }

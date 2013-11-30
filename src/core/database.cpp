@@ -303,7 +303,8 @@ void Database::StaticInit() {
       !_sqlite3_backup_finish ||
       !_sqlite3_backup_pagecount ||
       !_sqlite3_backup_remaining) {
-    qLog(Error) << "Couldn't resolve sqlite symbols";
+    qLog(Fatal) << "Couldn't resolve sqlite symbols.  Please compile "
+                   "Clementine with -DSTATIC_SQLITE=ON.";
     sLoadedSqliteSymbols = false;
   } else {
     sLoadedSqliteSymbols = true;
@@ -485,6 +486,20 @@ void Database::RecreateAttachedDb(const QString& database_name) {
 void Database::AttachDatabase(const QString& database_name,
                               const AttachedDatabase& database) {
   attached_databases_[database_name] = database;
+}
+
+void Database::AttachDatabaseOnDbConnection(const QString &database_name,
+                                            const AttachedDatabase &database,
+                                            QSqlDatabase& db) {
+  AttachDatabase(database_name, database);
+
+  // Attach the db
+  QSqlQuery q("ATTACH DATABASE :filename AS :alias", db);
+  q.bindValue(":filename", database.filename_);
+  q.bindValue(":alias", database_name);
+  if (!q.exec()) {
+    qFatal("Couldn't attach external database '%s'", database_name.toAscii().constData());
+  }
 }
 
 void Database::DetachDatabase(const QString& database_name) {

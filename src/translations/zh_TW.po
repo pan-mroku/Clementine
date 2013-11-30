@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the Clementine package.
 # 
 # Translators:
+# brli7848 <rainman59118@gmail.com>, 2013
 # Cheng-Hong Wu <stu2731652@gmail.com>, 2012
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010
 # taijuin lee <taijuin@gmail.com>, 2011-2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Clementine Music Player\n"
-"Report-Msgid-Bugs-To: http://code.google.com/p/clementine-player/issues/list\n"
-"PO-Revision-Date: 2013-07-29 16:44+0000\n"
-"Last-Translator: taijuin lee <taijuin@gmail.com>\n"
+"PO-Revision-Date: 2013-11-17 19:39+0000\n"
+"Last-Translator: Clementine Buildbot <clementinebuildbot@davidsansome.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/clementine/language/zh_TW/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -68,12 +68,12 @@ msgstr " 歌曲"
 msgid "%1 albums"
 msgstr "%1 專輯"
 
-#: core/utilities.cpp:108
+#: core/utilities.cpp:109
 #, qt-format
 msgid "%1 days"
 msgstr "%1 天"
 
-#: core/utilities.cpp:129
+#: core/utilities.cpp:130
 #, qt-format
 msgid "%1 days ago"
 msgstr "%1 天前"
@@ -88,7 +88,7 @@ msgstr ""
 msgid "%1 playlists (%2)"
 msgstr "%1 播放清單 (%2)"
 
-#: playlist/playlistmanager.cpp:408
+#: playlist/playlistmanager.cpp:413
 #, qt-format
 msgid "%1 selected of"
 msgstr "%1 選定"
@@ -113,7 +113,7 @@ msgstr "%1 首歌曲找到"
 msgid "%1 songs found (showing %2)"
 msgstr "發現%1首歌(顯示%2)"
 
-#: playlist/playlistmanager.cpp:414
+#: playlist/playlistmanager.cpp:419
 #, qt-format
 msgid "%1 tracks"
 msgstr "%1 歌曲"
@@ -170,11 +170,11 @@ msgstr "中間(&C)"
 msgid "&Custom"
 msgstr "自訂(&C)"
 
-#: ../bin/src/ui_mainwindow.h:731
+#: ../bin/src/ui_mainwindow.h:730
 msgid "&Extras"
 msgstr "外掛程式(&E)"
 
-#: ../bin/src/ui_mainwindow.h:730
+#: ../bin/src/ui_mainwindow.h:729
 msgid "&Help"
 msgstr "幫助(&H)"
 
@@ -191,7 +191,7 @@ msgstr "隱藏(&H)..."
 msgid "&Left"
 msgstr "左邊(&L)"
 
-#: ../bin/src/ui_mainwindow.h:728
+#: ../bin/src/ui_mainwindow.h:727
 msgid "&Music"
 msgstr "音樂(&M)"
 
@@ -199,15 +199,15 @@ msgstr "音樂(&M)"
 msgid "&None"
 msgstr "無(&N)"
 
-#: ../bin/src/ui_mainwindow.h:729
+#: ../bin/src/ui_mainwindow.h:728
 msgid "&Playlist"
 msgstr "播放清單(&P)"
 
-#: ../bin/src/ui_mainwindow.h:657
+#: ../bin/src/ui_mainwindow.h:656
 msgid "&Quit"
 msgstr "結束(&Q)"
 
-#: ../bin/src/ui_mainwindow.h:695
+#: ../bin/src/ui_mainwindow.h:694
 msgid "&Repeat mode"
 msgstr "循環播放模式(&R)"
 
@@ -215,7 +215,7 @@ msgstr "循環播放模式(&R)"
 msgid "&Right"
 msgstr "右邊(&R)"
 
-#: ../bin/src/ui_mainwindow.h:694
+#: ../bin/src/ui_mainwindow.h:693
 msgid "&Shuffle mode"
 msgstr "隨機播放模式(&S)"
 
@@ -223,7 +223,7 @@ msgstr "隨機播放模式(&S)"
 msgid "&Stretch columns to fit window"
 msgstr "將列伸展至視窗邊界(&S)"
 
-#: ../bin/src/ui_mainwindow.h:732
+#: ../bin/src/ui_mainwindow.h:731
 msgid "&Tools"
 msgstr "工具(&T)"
 
@@ -247,11 +247,11 @@ msgstr "0:00:00"
 msgid "0px"
 msgstr ""
 
-#: core/utilities.cpp:108
+#: core/utilities.cpp:109
 msgid "1 day"
 msgstr "1 天"
 
-#: playlist/playlistmanager.cpp:414
+#: playlist/playlistmanager.cpp:419
 msgid "1 track"
 msgstr "1 歌曲"
 
@@ -351,7 +351,7 @@ msgstr "AAC 32k"
 msgid "AAC 64k"
 msgstr "AAC 64k"
 
-#: core/song.cpp:336
+#: core/song.cpp:348
 msgid "AIFF"
 msgstr "AIFF"
 
@@ -368,11 +368,11 @@ msgstr ""
 msgid "About %1"
 msgstr "關於 %1"
 
-#: ../bin/src/ui_mainwindow.h:678
+#: ../bin/src/ui_mainwindow.h:677
 msgid "About Clementine..."
 msgstr "關於 Clementine..."
 
-#: ../bin/src/ui_mainwindow.h:713
+#: ../bin/src/ui_mainwindow.h:712
 msgid "About Qt..."
 msgstr "關於 Qt..."
 
@@ -420,19 +420,19 @@ msgstr "加入其它的網路串流"
 msgid "Add directory..."
 msgstr "加入目錄..."
 
-#: ui/mainwindow.cpp:1602
+#: ui/mainwindow.cpp:1603
 msgid "Add file"
 msgstr "加入檔案"
 
-#: ../bin/src/ui_mainwindow.h:724
+#: ../bin/src/ui_mainwindow.h:723
 msgid "Add file to transcoder"
 msgstr ""
 
-#: ../bin/src/ui_mainwindow.h:722
+#: ../bin/src/ui_mainwindow.h:721
 msgid "Add file(s) to transcoder"
 msgstr ""
 
-#: ../bin/src/ui_mainwindow.h:682
+#: ../bin/src/ui_mainwindow.h:681
 msgid "Add file..."
 msgstr "加入檔案..."
 
@@ -440,11 +440,11 @@ msgstr "加入檔案..."
 msgid "Add files to transcode"
 msgstr "加入檔案以轉碼"
 
-#: ui/mainwindow.cpp:1630
+#: ui/mainwindow.cpp:1631
 msgid "Add folder"
 msgstr "加入資料夾"
 
-#: ../bin/src/ui_mainwindow.h:699
+#: ../bin/src/ui_mainwindow.h:698
 msgid "Add folder..."
 msgstr "加入資料夾..."
 
@@ -456,7 +456,7 @@ msgstr "新增資料夾..."
 msgid "Add podcast"
 msgstr "加入 Podcast"
 
-#: podcasts/podcastservice.cpp:257 ../bin/src/ui_mainwindow.h:720
+#: podcasts/podcastservice.cpp:257 ../bin/src/ui_mainwindow.h:719
 msgid "Add podcast..."
 msgstr "加入 Podcast..."
 
@@ -532,19 +532,19 @@ msgstr "加入歌曲曲目標籤"
 msgid "Add song year tag"
 msgstr "加入歌曲年份標籤"
 
-#: ../bin/src/ui_mainwindow.h:684
+#: ../bin/src/ui_mainwindow.h:683
 msgid "Add stream..."
 msgstr "加入網路串流..."
 
-#: internet/groovesharkservice.cpp:1085
+#: internet/groovesharkservice.cpp:1087
 msgid "Add to Grooveshark favorites"
 msgstr "加入到 Grooveshark 最愛"
 
-#: internet/groovesharkservice.cpp:1097
+#: internet/groovesharkservice.cpp:1099
 msgid "Add to Grooveshark playlists"
 msgstr "加入到 Grooveshark 播放清單"
 
-#: ui/mainwindow.cpp:1427
+#: ui/mainwindow.cpp:1428
 msgid "Add to another playlist"
 msgstr "加入到其他播放清單"
 
@@ -585,11 +585,11 @@ msgstr "今天加入"
 msgid "Added within three months"
 msgstr "在三個月內加入"
 
-#: internet/groovesharkservice.cpp:1392
+#: internet/groovesharkservice.cpp:1394
 msgid "Adding song to My Music"
 msgstr ""
 
-#: internet/groovesharkservice.cpp:1369
+#: internet/groovesharkservice.cpp:1371
 msgid "Adding song to favorites"
 msgstr "將歌曲新增至最愛"
 
@@ -605,7 +605,7 @@ msgstr ""
 msgid "After copying..."
 msgstr "複製後 ..."
 
-#: playlist/playlist.cpp:1208 ui/organisedialog.cpp:55
+#: playlist/playlist.cpp:1203 ui/organisedialog.cpp:55
 #: ui/qtsystemtrayicon.cpp:252 ../bin/src/ui_groupbydialog.h:129
 #: ../bin/src/ui_groupbydialog.h:142 ../bin/src/ui_groupbydialog.h:155
 #: ../bin/src/ui_albumcoversearcher.h:111
@@ -618,7 +618,7 @@ msgstr "專輯"
 msgid "Album (ideal loudness for all tracks)"
 msgstr "專輯 (為所有歌曲取得理想音量)"
 
-#: playlist/playlist.cpp:1214 ui/organisedialog.cpp:58
+#: playlist/playlist.cpp:1209 ui/organisedialog.cpp:58
 #: ../bin/src/ui_groupbydialog.h:131 ../bin/src/ui_groupbydialog.h:144
 #: ../bin/src/ui_groupbydialog.h:157 ../bin/src/ui_edittagdialog.h:688
 msgid "Album artist"
@@ -644,7 +644,7 @@ msgstr "無封面的專輯"
 msgid "All Files (*)"
 msgstr "所有檔案 (*)"
 
-#: ../bin/src/ui_mainwindow.h:690
+#: ../bin/src/ui_mainwindow.h:689
 msgid "All Glory to the Hypnotoad!"
 msgstr "所有的榮耀歸於大蟾蜍"
 
@@ -757,7 +757,7 @@ msgstr "使用壓縮，以防止截波失真"
 msgid "Are you sure you want to delete the \"%1\" preset?"
 msgstr "您確定您想要刪除預設的「%1」嗎?"
 
-#: internet/groovesharkservice.cpp:1290
+#: internet/groovesharkservice.cpp:1292
 msgid "Are you sure you want to delete this playlist?"
 msgstr "您確定要刪除這個播放清單？"
 
@@ -771,7 +771,7 @@ msgid ""
 "the songs of your library?"
 msgstr ""
 
-#: playlist/playlist.cpp:1207 ui/organisedialog.cpp:56
+#: playlist/playlist.cpp:1202 ui/organisedialog.cpp:56
 #: ui/qtsystemtrayicon.cpp:250 ../bin/src/ui_groupbydialog.h:130
 #: ../bin/src/ui_groupbydialog.h:143 ../bin/src/ui_groupbydialog.h:156
 #: ../bin/src/ui_albumcoversearcher.h:107
@@ -843,7 +843,7 @@ msgstr "平均圖片大小"
 msgid "BBC Podcasts"
 msgstr "BBC Podcasts"
 
-#: playlist/playlist.cpp:1225 ui/organisedialog.cpp:64
+#: playlist/playlist.cpp:1220 ui/organisedialog.cpp:64
 #: ../bin/src/ui_edittagdialog.h:668
 msgid "BPM"
 msgstr "BPM"
@@ -864,7 +864,7 @@ msgstr "背景圖片"
 msgid "Background opacity"
 msgstr "背景不透明"
 
-#: core/database.cpp:734
+#: core/database.cpp:749
 msgid "Backing up database"
 msgstr "備份資料庫"
 
@@ -872,7 +872,7 @@ msgstr "備份資料庫"
 msgid "Balance"
 msgstr ""
 
-#: ../bin/src/ui_mainwindow.h:663
+#: ../bin/src/ui_mainwindow.h:662
 msgid "Ban"
 msgstr "禁止"
 
@@ -901,7 +901,7 @@ msgstr "最佳"
 msgid "Biography from %1"
 msgstr "%1的傳記"
 
-#: playlist/playlist.cpp:1226 ../bin/src/ui_edittagdialog.h:670
+#: playlist/playlist.cpp:1221 ../bin/src/ui_edittagdialog.h:670
 msgid "Bit rate"
 msgstr "位元率"
 
@@ -959,7 +959,7 @@ msgstr ""
 msgid "Buttons"
 msgstr "按鈕"
 
-#: core/song.cpp:339
+#: core/song.cpp:351
 msgid "CDDA"
 msgstr "CDDA"
 
@@ -1055,11 +1055,11 @@ msgstr "清除"
 msgid "Clear"
 msgstr "清除"
 
-#: ../bin/src/ui_mainwindow.h:665 ../bin/src/ui_mainwindow.h:667
+#: ../bin/src/ui_mainwindow.h:664 ../bin/src/ui_mainwindow.h:666
 msgid "Clear playlist"
 msgstr "清除播放清單"
 
-#: smartplaylists/searchtermwidget.cpp:329 ../bin/src/ui_mainwindow.h:648
+#: smartplaylists/searchtermwidget.cpp:329 ../bin/src/ui_mainwindow.h:647
 #: visualisations/visualisationcontainer.cpp:211
 #: ../bin/src/ui_visualisationoverlay.h:183
 msgid "Clementine"
@@ -1140,7 +1140,7 @@ msgstr ""
 msgid "Click here to add some music"
 msgstr "點擊此處加入一些音樂"
 
-#: playlist/playlisttabbar.cpp:257
+#: playlist/playlisttabbar.cpp:293
 msgid ""
 "Click here to favorite this playlist so it will be saved and remain "
 "accessible through the \"Playlists\" panel on the left side bar"
@@ -1161,7 +1161,7 @@ msgstr "點擊「登錄」按鈕將打開一個網頁瀏覽器。登錄後您應
 msgid "Close"
 msgstr "關閉"
 
-#: playlist/playlisttabbar.cpp:51
+#: playlist/playlisttabbar.cpp:54
 msgid "Close playlist"
 msgstr ""
 
@@ -1189,7 +1189,7 @@ msgstr "顏色"
 msgid "Comma separated list of class:level, level is 0-3"
 msgstr "用逗號化分類別清單:等級為0-3"
 
-#: playlist/playlist.cpp:1235 smartplaylists/searchterm.cpp:288
+#: playlist/playlist.cpp:1230 smartplaylists/searchterm.cpp:288
 #: ui/organisedialog.cpp:67 ../bin/src/ui_edittagdialog.h:694
 msgid "Comment"
 msgstr "評論"
@@ -1198,11 +1198,11 @@ msgstr "評論"
 msgid "Complete tags automatically"
 msgstr "標籤完全自動分類"
 
-#: ../bin/src/ui_mainwindow.h:717
+#: ../bin/src/ui_mainwindow.h:716
 msgid "Complete tags automatically..."
 msgstr "標籤完全自動分類..."
 
-#: playlist/playlist.cpp:1215 ui/organisedialog.cpp:59
+#: playlist/playlist.cpp:1210 ui/organisedialog.cpp:59
 #: ../bin/src/ui_groupbydialog.h:132 ../bin/src/ui_groupbydialog.h:145
 #: ../bin/src/ui_groupbydialog.h:158 ../bin/src/ui_edittagdialog.h:689
 msgid "Composer"
@@ -1213,7 +1213,7 @@ msgstr "作曲家"
 msgid "Configure %1..."
 msgstr ""
 
-#: internet/groovesharkservice.cpp:550
+#: internet/groovesharkservice.cpp:552
 msgid "Configure Grooveshark..."
 msgstr "設定 Grooveshark..."
 
@@ -1278,7 +1278,7 @@ msgid ""
 "Connection timed out, check server URL. Example: http://localhost:4040/"
 msgstr ""
 
-#: ../bin/src/ui_console.h:80 ../bin/src/ui_mainwindow.h:693
+#: ../bin/src/ui_console.h:80 ../bin/src/ui_mainwindow.h:692
 msgid "Console"
 msgstr ""
 
@@ -1294,7 +1294,7 @@ msgstr "轉換所有音樂"
 msgid "Convert any music that the device can't play"
 msgstr "轉換任何裝置無法播放的音樂"
 
-#: internet/groovesharkservice.cpp:1170
+#: internet/groovesharkservice.cpp:1172
 msgid "Copy to clipboard"
 msgstr "複製到剪貼簿"
 
@@ -1349,7 +1349,7 @@ msgid "Couldn't open output file %1"
 msgstr "無法開啟輸出檔 %1"
 
 #: internet/cloudfileservice.cpp:88 ../bin/src/ui_albumcovermanager.h:215
-#: ../bin/src/ui_albumcoversearcher.h:105 ../bin/src/ui_mainwindow.h:688
+#: ../bin/src/ui_albumcoversearcher.h:105 ../bin/src/ui_mainwindow.h:687
 #: internet/googledriveservice.cpp:189
 msgid "Cover Manager"
 msgstr "封面管理員"
@@ -1381,7 +1381,7 @@ msgstr "從 %1 取得封面圖片"
 msgid "Covers from %1"
 msgstr "來自 %1 的封面"
 
-#: internet/groovesharkservice.cpp:518 internet/groovesharkservice.cpp:1242
+#: internet/groovesharkservice.cpp:520 internet/groovesharkservice.cpp:1244
 msgid "Create a new Grooveshark playlist"
 msgstr "建立一個新的 Grooveshark 播放清單"
 
@@ -1393,11 +1393,11 @@ msgstr "當自動改變曲目時，聲音同時淡出及淡入"
 msgid "Cross-fade when changing tracks manually"
 msgstr "當手動改變曲目時，聲音同時淡出及淡入"
 
-#: ../bin/src/ui_mainwindow.h:660
+#: ../bin/src/ui_mainwindow.h:659
 msgid "Ctrl+Alt+V"
 msgstr "Ctrl+Alt+V"
 
-#: ../bin/src/ui_mainwindow.h:664
+#: ../bin/src/ui_mainwindow.h:663
 msgid "Ctrl+B"
 msgstr "Ctrl+B"
 
@@ -1405,63 +1405,63 @@ msgstr "Ctrl+B"
 msgid "Ctrl+Down"
 msgstr "Ctrl+Down"
 
-#: ../bin/src/ui_mainwindow.h:671
+#: ../bin/src/ui_mainwindow.h:670
 msgid "Ctrl+E"
 msgstr "Ctrl+E"
 
-#: ../bin/src/ui_mainwindow.h:681
+#: ../bin/src/ui_mainwindow.h:680
 msgid "Ctrl+H"
 msgstr "Ctrl+H"
 
-#: ../bin/src/ui_mainwindow.h:701
+#: ../bin/src/ui_mainwindow.h:700
 msgid "Ctrl+J"
 msgstr "Ctrl+J"
 
-#: ../bin/src/ui_queuemanager.h:141 ../bin/src/ui_mainwindow.h:669
+#: ../bin/src/ui_queuemanager.h:141 ../bin/src/ui_mainwindow.h:668
 msgid "Ctrl+K"
 msgstr "Ctrl+K"
 
-#: ../bin/src/ui_mainwindow.h:662
+#: ../bin/src/ui_mainwindow.h:661
 msgid "Ctrl+L"
 msgstr "Ctrl+L"
 
-#: ../bin/src/ui_mainwindow.h:715
+#: ../bin/src/ui_mainwindow.h:714
 msgid "Ctrl+M"
 msgstr "Ctrl+M"
 
-#: ../bin/src/ui_mainwindow.h:703
+#: ../bin/src/ui_mainwindow.h:702
 msgid "Ctrl+N"
 msgstr "Ctrl+N"
 
-#: ../bin/src/ui_mainwindow.h:685
+#: ../bin/src/ui_mainwindow.h:684
 msgid "Ctrl+O"
 msgstr "Ctrl+O"
 
-#: ../bin/src/ui_mainwindow.h:677
+#: ../bin/src/ui_mainwindow.h:676
 msgid "Ctrl+P"
 msgstr "Ctrl+P"
 
-#: ../bin/src/ui_mainwindow.h:658
+#: ../bin/src/ui_mainwindow.h:657
 msgid "Ctrl+Q"
 msgstr "Ctrl+Q"
 
-#: ../bin/src/ui_mainwindow.h:705
+#: ../bin/src/ui_mainwindow.h:704
 msgid "Ctrl+S"
 msgstr "Ctrl+S"
 
-#: ../bin/src/ui_mainwindow.h:683
+#: ../bin/src/ui_mainwindow.h:682
 msgid "Ctrl+Shift+A"
 msgstr "Ctrl+Shift+A"
 
-#: ../bin/src/ui_mainwindow.h:707
+#: ../bin/src/ui_mainwindow.h:706
 msgid "Ctrl+Shift+O"
 msgstr "Ctrl+Shift+O"
 
-#: ../bin/src/ui_mainwindow.h:726
+#: ../bin/src/ui_mainwindow.h:725
 msgid "Ctrl+Shift+T"
 msgstr ""
 
-#: ../bin/src/ui_mainwindow.h:718
+#: ../bin/src/ui_mainwindow.h:717
 msgid "Ctrl+T"
 msgstr "Ctrl+T"
 
@@ -1497,18 +1497,18 @@ msgstr "DBus 路徑"
 msgid "Dance"
 msgstr "舞蹈"
 
-#: core/database.cpp:688
+#: core/database.cpp:703
 msgid ""
 "Database corruption detected. Please read https://code.google.com/p"
 "/clementine-player/wiki/DatabaseCorruption for instructions on how to "
 "recover your database"
 msgstr ""
 
-#: playlist/playlist.cpp:1233 ../bin/src/ui_edittagdialog.h:679
+#: playlist/playlist.cpp:1228 ../bin/src/ui_edittagdialog.h:679
 msgid "Date created"
 msgstr "創建的日期"
 
-#: playlist/playlist.cpp:1232 ../bin/src/ui_edittagdialog.h:678
+#: playlist/playlist.cpp:1227 ../bin/src/ui_edittagdialog.h:678
 msgid "Date modified"
 msgstr "修改的日期"
 
@@ -1549,7 +1549,7 @@ msgstr "在兩個視覺化效果間延遲切換"
 msgid "Delete"
 msgstr ""
 
-#: internet/groovesharkservice.cpp:521 internet/groovesharkservice.cpp:1289
+#: internet/groovesharkservice.cpp:523 internet/groovesharkservice.cpp:1291
 msgid "Delete Grooveshark playlist"
 msgstr "刪除 Grooveshark 播放清單"
 
@@ -1558,7 +1558,7 @@ msgid "Delete downloaded data"
 msgstr "刪除下載的資料"
 
 #: devices/deviceview.cpp:388 library/libraryview.cpp:608
-#: ui/mainwindow.cpp:1904 widgets/fileview.cpp:187
+#: ui/mainwindow.cpp:1905 widgets/fileview.cpp:187
 msgid "Delete files"
 msgstr "刪除檔案"
 
@@ -1591,11 +1591,11 @@ msgstr "刪除原本的檔案"
 msgid "Deleting files"
 msgstr "檔案刪除中"
 
-#: ui/mainwindow.cpp:1362
+#: ui/mainwindow.cpp:1363
 msgid "Dequeue selected tracks"
 msgstr "將選取的歌曲移出佇列中"
 
-#: ui/mainwindow.cpp:1360
+#: ui/mainwindow.cpp:1361
 msgid "Dequeue track"
 msgstr "將歌曲移出佇列中"
 
@@ -1665,7 +1665,7 @@ msgstr ""
 msgid "Disabled"
 msgstr "停用"
 
-#: playlist/playlist.cpp:1211 ui/organisedialog.cpp:63
+#: playlist/playlist.cpp:1206 ui/organisedialog.cpp:63
 #: ../bin/src/ui_edittagdialog.h:685
 msgid "Disc"
 msgstr "唱片"
@@ -1683,7 +1683,7 @@ msgstr "顯示選項"
 msgid "Display the on-screen-display"
 msgstr "顯示螢幕上的顯示"
 
-#: ../bin/src/ui_mainwindow.h:716
+#: ../bin/src/ui_mainwindow.h:715
 msgid "Do a full library rescan"
 msgstr "做一個完整的音樂庫重新掃描"
 
@@ -1809,16 +1809,16 @@ msgstr "動態模式開啟"
 msgid "Dynamic random mix"
 msgstr "動態隨機混合"
 
+#: ui/mainwindow.cpp:1396
+#, qt-format
+msgid "Edit \"%1\"..."
+msgstr ""
+
 #: library/libraryview.cpp:381
 msgid "Edit smart playlist..."
 msgstr "編輯智慧型播放清單..."
 
-#: ui/mainwindow.cpp:1395
-#, qt-format
-msgid "Edit tag \"%1\"..."
-msgstr "編輯標籤「%1」..."
-
-#: ../bin/src/ui_mainwindow.h:674
+#: ../bin/src/ui_mainwindow.h:673
 msgid "Edit tag..."
 msgstr "編輯標籤 ..."
 
@@ -1831,7 +1831,7 @@ msgid "Edit track information"
 msgstr "編輯歌曲資訊"
 
 #: library/libraryview.cpp:395 widgets/fileviewlist.cpp:50
-#: ../bin/src/ui_mainwindow.h:670
+#: ../bin/src/ui_mainwindow.h:669
 msgid "Edit track information..."
 msgstr "編輯歌曲資訊..."
 
@@ -1889,7 +1889,7 @@ msgstr "輸入網址，從網路中取得封面"
 msgid "Enter a filename for exported covers (no extension):"
 msgstr ""
 
-#: playlist/playlisttabbar.cpp:134
+#: playlist/playlisttabbar.cpp:137
 msgid "Enter a new name for this playlist"
 msgstr "為這個播放清單輸入新的名稱"
 
@@ -1932,7 +1932,7 @@ msgstr ""
 msgid "Entire collection"
 msgstr "整個收藏"
 
-#: ../bin/src/ui_equalizer.h:163 ../bin/src/ui_mainwindow.h:697
+#: ../bin/src/ui_equalizer.h:163 ../bin/src/ui_mainwindow.h:696
 msgid "Equalizer"
 msgstr "等化器"
 
@@ -1944,9 +1944,9 @@ msgstr ""
 msgid "Equivalent to --log-levels *:3"
 msgstr ""
 
-#: internet/groovesharkservice.cpp:1015
+#: internet/groovesharkservice.cpp:1017
 #: internet/magnatunedownloaddialog.cpp:225 library/libraryview.cpp:602
-#: ui/mainwindow.cpp:1856 ui/mainwindow.cpp:1972
+#: ui/mainwindow.cpp:1857 ui/mainwindow.cpp:1973
 msgid "Error"
 msgstr "錯誤"
 
@@ -2059,27 +2059,27 @@ msgstr ""
 msgid "Exported %1 covers out of %2 (%3 skipped)"
 msgstr ""
 
-#: ../bin/src/ui_mainwindow.h:679
+#: ../bin/src/ui_mainwindow.h:678
 msgid "F1"
 msgstr "F1"
 
-#: ../bin/src/ui_mainwindow.h:675
+#: ../bin/src/ui_mainwindow.h:674
 msgid "F2"
 msgstr "F2"
 
-#: ../bin/src/ui_mainwindow.h:650
+#: ../bin/src/ui_mainwindow.h:649
 msgid "F5"
 msgstr "F5"
 
-#: ../bin/src/ui_mainwindow.h:652
+#: ../bin/src/ui_mainwindow.h:651
 msgid "F6"
 msgstr "F6"
 
-#: ../bin/src/ui_mainwindow.h:654
+#: ../bin/src/ui_mainwindow.h:653
 msgid "F7"
 msgstr "F7"
 
-#: ../bin/src/ui_mainwindow.h:656
+#: ../bin/src/ui_mainwindow.h:655
 msgid "F8"
 msgstr "F8"
 
@@ -2129,7 +2129,7 @@ msgstr ""
 msgid "Fast"
 msgstr "快速"
 
-#: internet/groovesharkservice.cpp:615
+#: internet/groovesharkservice.cpp:617
 msgid "Favorites"
 msgstr "我的最愛"
 
@@ -2165,19 +2165,19 @@ msgstr "副檔名"
 msgid "File formats"
 msgstr "檔案格式"
 
-#: playlist/playlist.cpp:1228 ../bin/src/ui_edittagdialog.h:680
+#: playlist/playlist.cpp:1223 ../bin/src/ui_edittagdialog.h:680
 msgid "File name"
 msgstr "檔名"
 
-#: playlist/playlist.cpp:1229
+#: playlist/playlist.cpp:1224
 msgid "File name (without path)"
 msgstr "檔名(不含路徑)"
 
-#: playlist/playlist.cpp:1230 ../bin/src/ui_edittagdialog.h:674
+#: playlist/playlist.cpp:1225 ../bin/src/ui_edittagdialog.h:674
 msgid "File size"
 msgstr "檔案大小"
 
-#: playlist/playlist.cpp:1231 ../bin/src/ui_groupbydialog.h:133
+#: playlist/playlist.cpp:1226 ../bin/src/ui_groupbydialog.h:133
 #: ../bin/src/ui_groupbydialog.h:146 ../bin/src/ui_groupbydialog.h:159
 #: ../bin/src/ui_edittagdialog.h:676
 msgid "File type"
@@ -2211,7 +2211,7 @@ msgstr "完成"
 msgid "First level"
 msgstr "第一層次"
 
-#: core/song.cpp:328
+#: core/song.cpp:340
 msgid "Flac"
 msgstr "Flac"
 
@@ -2298,7 +2298,7 @@ msgstr "全部高音"
 msgid "GStreamer audio engine"
 msgstr "GStreamer 的音訊引擎"
 
-#: ui/settingsdialog.cpp:133
+#: ui/settingsdialog.cpp:131
 msgid "General"
 msgstr "一般"
 
@@ -2306,21 +2306,21 @@ msgstr "一般"
 msgid "General settings"
 msgstr "一般設定"
 
-#: playlist/playlist.cpp:1213 ui/organisedialog.cpp:66
+#: playlist/playlist.cpp:1208 ui/organisedialog.cpp:66
 #: ../bin/src/ui_groupbydialog.h:134 ../bin/src/ui_groupbydialog.h:147
 #: ../bin/src/ui_groupbydialog.h:160 ../bin/src/ui_edittagdialog.h:692
 msgid "Genre"
 msgstr "風格"
 
-#: internet/groovesharkservice.cpp:540
+#: internet/groovesharkservice.cpp:542
 msgid "Get a URL to share this Grooveshark playlist"
 msgstr "獲取一個網址以分享這個 Grooveshark 播放清單"
 
-#: internet/groovesharkservice.cpp:537 internet/groovesharkservice.cpp:1108
+#: internet/groovesharkservice.cpp:539 internet/groovesharkservice.cpp:1110
 msgid "Get a URL to share this Grooveshark song"
 msgstr "獲取一個網址以分享這個 Grooveshark 歌曲"
 
-#: internet/groovesharkservice.cpp:788
+#: internet/groovesharkservice.cpp:790
 msgid "Getting Grooveshark popular songs"
 msgstr "獲取 Grooveshark 熱門歌曲"
 
@@ -2340,11 +2340,11 @@ msgstr "給它一個名字："
 msgid "Go"
 msgstr "前往"
 
-#: ../bin/src/ui_mainwindow.h:708
+#: ../bin/src/ui_mainwindow.h:707
 msgid "Go to next playlist tab"
 msgstr "到下一個播放清單分頁"
 
-#: ../bin/src/ui_mainwindow.h:709
+#: ../bin/src/ui_mainwindow.h:708
 msgid "Go to previous playlist tab"
 msgstr "到前一個播放清單分頁"
 
@@ -2366,19 +2366,19 @@ msgstr "用灰色顯示在我播放清單有,但不存在的歌曲"
 msgid "Grooveshark"
 msgstr "Grooveshark"
 
-#: internet/groovesharkservice.cpp:406
+#: internet/groovesharkservice.cpp:408
 msgid "Grooveshark login error"
 msgstr "Grooveshark登入錯誤"
 
-#: internet/groovesharkservice.cpp:1160
+#: internet/groovesharkservice.cpp:1162
 msgid "Grooveshark playlist's URL"
 msgstr "Grooveshark 播放清單的網址"
 
-#: internet/groovesharkservice.cpp:601
+#: internet/groovesharkservice.cpp:603
 msgid "Grooveshark radio"
 msgstr "Grooveshark 電台"
 
-#: internet/groovesharkservice.cpp:1138
+#: internet/groovesharkservice.cpp:1140
 msgid "Grooveshark song's URL"
 msgstr "Grooveshark 歌曲的網址"
 
@@ -2414,7 +2414,7 @@ msgstr "依風格/專輯歸類"
 msgid "Group by Genre/Artist/Album"
 msgstr "依風格/演出者/專輯歸類"
 
-#: playlist/playlist.cpp:1217 ui/organisedialog.cpp:61
+#: playlist/playlist.cpp:1212 ui/organisedialog.cpp:61
 #: ../bin/src/ui_edittagdialog.h:691
 msgid "Grouping"
 msgstr ""
@@ -2508,12 +2508,12 @@ msgstr "圖片 (*.png *.jpg *.jpeg *.bmp *.gif *.xpm *.pbm *.pgm *.ppm *.xbm)"
 msgid "Images (*.png *.jpg *.jpeg *.bmp *.xpm *.pbm *.ppm *.xbm)"
 msgstr "圖片(*.png *.jpg *.jpeg *.bmp *.xpm *.pbm *.ppm *.xbm)"
 
-#: core/utilities.cpp:145
+#: core/utilities.cpp:146
 #, qt-format
 msgid "In %1 days"
 msgstr ""
 
-#: core/utilities.cpp:149
+#: core/utilities.cpp:150
 #, qt-format
 msgid "In %1 weeks"
 msgstr ""
@@ -2577,7 +2577,7 @@ msgstr "插入..."
 msgid "Installed"
 msgstr "已安裝"
 
-#: core/database.cpp:673
+#: core/database.cpp:688
 msgid "Integrity check"
 msgstr ""
 
@@ -2585,7 +2585,7 @@ msgstr ""
 msgid "Internet"
 msgstr "網路"
 
-#: ui/settingsdialog.cpp:155
+#: ui/settingsdialog.cpp:153
 msgid "Internet providers"
 msgstr "網際網路服務供應商"
 
@@ -2617,13 +2617,13 @@ msgstr "無效的服務"
 msgid "Invalid session key"
 msgstr "無效對稱金鑰"
 
-#: internet/groovesharkservice.cpp:399
+#: internet/groovesharkservice.cpp:401
 msgid "Invalid username and/or password"
 msgstr "無效使用者名稱 及/或 密碼"
 
 #: internet/jamendoservice.cpp:127
 msgid "Jamendo"
-msgstr ""
+msgstr "Jamendo"
 
 #: internet/jamendoservice.cpp:109
 msgid "Jamendo Most Listened Tracks"
@@ -2645,7 +2645,7 @@ msgstr "Jamendo 每週熱門曲目"
 msgid "Jamendo database"
 msgstr "Jamendo 資料庫"
 
-#: ../bin/src/ui_mainwindow.h:700
+#: ../bin/src/ui_mainwindow.h:699
 msgid "Jump to the currently playing track"
 msgstr "跳轉到目前播放的曲目"
 
@@ -2669,7 +2669,7 @@ msgstr "當視窗關閉時,保持在背景運轉"
 msgid "Keep the original files"
 msgstr "保留原本的檔案"
 
-#: ../bin/src/ui_mainwindow.h:692
+#: ../bin/src/ui_mainwindow.h:691
 msgid "Kittens"
 msgstr "小貓"
 
@@ -2693,7 +2693,7 @@ msgstr "大的專輯封面"
 msgid "Large sidebar"
 msgstr "大型側邊欄"
 
-#: library/library.cpp:71 playlist/playlist.cpp:1222
+#: library/library.cpp:71 playlist/playlist.cpp:1217
 #: ../bin/src/ui_edittagdialog.h:671
 msgid "Last played"
 msgstr "最近播放"
@@ -2776,7 +2776,7 @@ msgstr "如果送出空白將使用預設值。\n範例: \"/dev/dsp\",\"front\"�
 msgid "Left"
 msgstr ""
 
-#: playlist/playlist.cpp:1209 ui/organisedialog.cpp:68
+#: playlist/playlist.cpp:1204 ui/organisedialog.cpp:68
 #: ui/qtsystemtrayicon.cpp:255 ../bin/src/ui_edittagdialog.h:666
 msgid "Length"
 msgstr "長度"
@@ -2789,7 +2789,7 @@ msgstr "音樂庫"
 msgid "Library advanced grouping"
 msgstr "音樂庫進階的歸類"
 
-#: ui/mainwindow.cpp:2089
+#: ui/mainwindow.cpp:2090
 msgid "Library rescan notice"
 msgstr "音樂庫重新掃描提示"
 
@@ -2801,7 +2801,7 @@ msgstr "音樂庫搜尋"
 msgid "Limits"
 msgstr "限制"
 
-#: internet/groovesharkservice.cpp:602
+#: internet/groovesharkservice.cpp:604
 msgid ""
 "Listen to Grooveshark songs based on what you've listened to previously"
 msgstr "聽取 Grooveshark 歌曲，根據您先前已經聽過的"
@@ -2834,7 +2834,7 @@ msgstr "從磁碟載入封面..."
 msgid "Load playlist"
 msgstr "載入播放清單"
 
-#: ../bin/src/ui_mainwindow.h:706
+#: ../bin/src/ui_mainwindow.h:705
 msgid "Load playlist..."
 msgstr "載入播放清單..."
 
@@ -2901,7 +2901,7 @@ msgstr "登錄失敗"
 msgid "Long term prediction profile (LTP)"
 msgstr "長時期預測規格 (LTP)"
 
-#: ../bin/src/ui_mainwindow.h:661
+#: ../bin/src/ui_mainwindow.h:660
 msgid "Love"
 msgstr "喜愛"
 
@@ -2923,12 +2923,12 @@ msgstr "低複雜度規格 (LC)"
 msgid "Lyrics"
 msgstr "歌詞"
 
-#: songinfo/ultimatelyricsprovider.cpp:136
+#: songinfo/ultimatelyricsprovider.cpp:139
 #, qt-format
 msgid "Lyrics from %1"
 msgstr "歌詞來自 %1"
 
-#: core/song.cpp:331 ../bin/src/ui_transcodersettingspage.h:175
+#: core/song.cpp:343 ../bin/src/ui_transcodersettingspage.h:175
 msgid "MP3"
 msgstr "MP3"
 
@@ -2940,11 +2940,11 @@ msgstr "MP3 256k"
 msgid "MP3 96k"
 msgstr "MP3 96k"
 
-#: core/song.cpp:329
+#: core/song.cpp:341
 msgid "MP4 AAC"
 msgstr "MP4 AAC"
 
-#: core/song.cpp:330
+#: core/song.cpp:342
 msgid "MPC"
 msgstr "MPC"
 
@@ -2964,7 +2964,7 @@ msgstr "Magnatune 下載完成"
 msgid "Main profile (MAIN)"
 msgstr "主規格 (MAIN)"
 
-#: core/backgroundstreams.cpp:36 ../bin/src/ui_mainwindow.h:691
+#: core/backgroundstreams.cpp:36 ../bin/src/ui_mainwindow.h:690
 msgid "Make it so!"
 msgstr "使它這樣的！"
 
@@ -3047,7 +3047,7 @@ msgstr "單聲道播放"
 msgid "Months"
 msgstr "月"
 
-#: playlist/playlist.cpp:1237
+#: playlist/playlist.cpp:1232
 msgid "Mood"
 msgstr ""
 
@@ -3086,7 +3086,7 @@ msgstr "移到音樂庫..."
 msgid "Move up"
 msgstr "上移"
 
-#: transcoder/transcodedialog.cpp:216 ui/mainwindow.cpp:1604
+#: transcoder/transcodedialog.cpp:216 ui/mainwindow.cpp:1605
 msgid "Music"
 msgstr "音樂"
 
@@ -3094,7 +3094,7 @@ msgstr "音樂"
 msgid "Music Library"
 msgstr "音樂庫"
 
-#: core/globalshortcuts.cpp:54 ../bin/src/ui_mainwindow.h:714
+#: core/globalshortcuts.cpp:54 ../bin/src/ui_mainwindow.h:713
 #: wiimotedev/wiimotesettingspage.cpp:105
 msgid "Mute"
 msgstr "静音"
@@ -3119,7 +3119,7 @@ msgstr "我的 Last.fm 推薦頻道"
 msgid "My Mix Radio"
 msgstr "我的混合頻道"
 
-#: internet/groovesharkservice.cpp:606
+#: internet/groovesharkservice.cpp:608
 msgid "My Music"
 msgstr ""
 
@@ -3135,7 +3135,7 @@ msgstr "我的廣播電台"
 msgid "My Recommendations"
 msgstr "我推薦的電台"
 
-#: internet/groovesharkservice.cpp:1243 internet/groovesharkservice.cpp:1336
+#: internet/groovesharkservice.cpp:1245 internet/groovesharkservice.cpp:1338
 #: ui/equalizer.cpp:178 ../bin/src/ui_deviceproperties.h:369
 #: ../bin/src/ui_magnatunedownloaddialog.h:135
 #: ../bin/src/ui_wizardfinishpage.h:84
@@ -3186,7 +3186,7 @@ msgstr "永不開始播放"
 msgid "New folder"
 msgstr ""
 
-#: ui/mainwindow.cpp:1444 ../bin/src/ui_mainwindow.h:702
+#: ui/mainwindow.cpp:1445 ../bin/src/ui_mainwindow.h:701
 msgid "New playlist"
 msgstr "新增播放清單"
 
@@ -3210,12 +3210,12 @@ msgstr "最新曲目"
 msgid "Next"
 msgstr "下一個"
 
-#: core/globalshortcuts.cpp:50 ../bin/src/ui_mainwindow.h:655
+#: core/globalshortcuts.cpp:50 ../bin/src/ui_mainwindow.h:654
 #: wiimotedev/wiimotesettingspage.cpp:99
 msgid "Next track"
 msgstr "下一首曲目"
 
-#: core/utilities.cpp:147
+#: core/utilities.cpp:148
 msgid "Next week"
 msgstr ""
 
@@ -3249,7 +3249,7 @@ msgstr "無短區塊"
 msgid "None"
 msgstr "沒有"
 
-#: library/libraryview.cpp:603 ui/mainwindow.cpp:1857 ui/mainwindow.cpp:1973
+#: library/libraryview.cpp:603 ui/mainwindow.cpp:1858 ui/mainwindow.cpp:1974
 msgid "None of the selected songs were suitable for copying to a device"
 msgstr "所選歌曲沒有適合複製到裝置的"
 
@@ -3314,19 +3314,19 @@ msgstr "現在正播放"
 msgid "OSD Preview"
 msgstr "OSD 的預覽"
 
-#: core/song.cpp:332
+#: core/song.cpp:344
 msgid "Ogg Flac"
 msgstr "Ogg Flac"
 
-#: core/song.cpp:335
+#: core/song.cpp:347
 msgid "Ogg Opus"
 msgstr ""
 
-#: core/song.cpp:333
+#: core/song.cpp:345
 msgid "Ogg Speex"
 msgstr "Ogg Speex"
 
-#: core/song.cpp:334 ../bin/src/ui_magnatunedownloaddialog.h:139
+#: core/song.cpp:346 ../bin/src/ui_magnatunedownloaddialog.h:139
 #: ../bin/src/ui_magnatunesettingspage.h:170
 msgid "Ogg Vorbis"
 msgstr "Ogg Vorbis"
@@ -3352,14 +3352,14 @@ msgid "Opacity"
 msgstr ""
 
 #: internet/digitallyimportedservicebase.cpp:179
-#: internet/groovesharkservice.cpp:544 internet/icecastservice.cpp:296
+#: internet/groovesharkservice.cpp:546 internet/icecastservice.cpp:296
 #: internet/jamendoservice.cpp:419 internet/magnatuneservice.cpp:278
 #: internet/somafmservice.cpp:100 internet/soundcloudservice.cpp:194
 #, qt-format
 msgid "Open %1 in browser"
 msgstr "在瀏覽器中開啟 %1"
 
-#: ../bin/src/ui_mainwindow.h:687
+#: ../bin/src/ui_mainwindow.h:686
 msgid "Open &audio CD..."
 msgstr "開啟音樂光碟(&A)..."
 
@@ -3375,7 +3375,7 @@ msgstr ""
 msgid "Open device"
 msgstr "開啟裝置"
 
-#: ../bin/src/ui_mainwindow.h:686
+#: ../bin/src/ui_mainwindow.h:685
 msgid "Open file..."
 msgstr "開啟檔案..."
 
@@ -3483,7 +3483,7 @@ msgstr "派對"
 msgid "Password"
 msgstr "密碼"
 
-#: core/globalshortcuts.cpp:46 ui/mainwindow.cpp:853 ui/mainwindow.cpp:1285
+#: core/globalshortcuts.cpp:46 ui/mainwindow.cpp:854 ui/mainwindow.cpp:1286
 #: ui/qtsystemtrayicon.cpp:178 wiimotedev/wiimotesettingspage.cpp:106
 msgid "Pause"
 msgstr "暫停"
@@ -3496,7 +3496,7 @@ msgstr "暫停播放"
 msgid "Paused"
 msgstr "已暫停"
 
-#: playlist/playlist.cpp:1216 ui/organisedialog.cpp:60
+#: playlist/playlist.cpp:1211 ui/organisedialog.cpp:60
 #: ../bin/src/ui_edittagdialog.h:690
 msgid "Performer"
 msgstr ""
@@ -3509,9 +3509,9 @@ msgstr ""
 msgid "Plain sidebar"
 msgstr "樸素的側邊欄"
 
-#: core/globalshortcuts.cpp:45 ui/mainwindow.cpp:487 ui/mainwindow.cpp:821
-#: ui/mainwindow.cpp:840 ui/mainwindow.cpp:1288 ui/qtsystemtrayicon.cpp:166
-#: ui/qtsystemtrayicon.cpp:192 ../bin/src/ui_mainwindow.h:651
+#: core/globalshortcuts.cpp:45 ui/mainwindow.cpp:487 ui/mainwindow.cpp:822
+#: ui/mainwindow.cpp:841 ui/mainwindow.cpp:1289 ui/qtsystemtrayicon.cpp:166
+#: ui/qtsystemtrayicon.cpp:192 ../bin/src/ui_mainwindow.h:650
 #: wiimotedev/wiimotesettingspage.cpp:101
 msgid "Play"
 msgstr "播放"
@@ -3524,7 +3524,7 @@ msgstr "播放藝術家或標籤"
 msgid "Play artist radio..."
 msgstr "播放藝術加的頻道..."
 
-#: playlist/playlist.cpp:1220 ../bin/src/ui_edittagdialog.h:667
+#: playlist/playlist.cpp:1215 ../bin/src/ui_edittagdialog.h:667
 msgid "Play count"
 msgstr "播放計數"
 
@@ -3562,8 +3562,8 @@ msgid "Player options"
 msgstr "播放器選項"
 
 #: playlist/playlistcontainer.cpp:280 playlist/playlistlistcontainer.cpp:227
-#: playlist/playlistmanager.cpp:84 playlist/playlistmanager.cpp:492
-#: playlist/playlisttabbar.cpp:321
+#: playlist/playlistmanager.cpp:84 playlist/playlistmanager.cpp:152
+#: playlist/playlistmanager.cpp:497 playlist/playlisttabbar.cpp:357
 msgid "Playlist"
 msgstr "播放清單"
 
@@ -3579,11 +3579,11 @@ msgstr "播放清單選擇"
 msgid "Playlist type"
 msgstr "播放清單類型"
 
-#: internet/groovesharkservice.cpp:624 ui/mainwindow.cpp:237
+#: internet/groovesharkservice.cpp:626 ui/mainwindow.cpp:237
 msgid "Playlists"
 msgstr "播放清單"
 
-#: ../data/oauthsuccess.html:36
+#: ../data/oauthsuccess.html:38
 msgid "Please close your browser and return to Clementine."
 msgstr ""
 
@@ -3599,15 +3599,15 @@ msgstr "Podcasts"
 msgid "Pop"
 msgstr "流行音樂"
 
-#: internet/groovesharkservice.cpp:575
+#: internet/groovesharkservice.cpp:577
 msgid "Popular songs"
 msgstr "熱門歌曲"
 
-#: internet/groovesharkservice.cpp:578
+#: internet/groovesharkservice.cpp:580
 msgid "Popular songs of the Month"
 msgstr "月份熱門歌曲"
 
-#: internet/groovesharkservice.cpp:585
+#: internet/groovesharkservice.cpp:587
 msgid "Popular songs today"
 msgstr "今日熱門歌曲"
 
@@ -3631,7 +3631,7 @@ msgstr "前置放大"
 msgid "Preferences"
 msgstr "偏好設定"
 
-#: ../bin/src/ui_mainwindow.h:676
+#: ../bin/src/ui_mainwindow.h:675
 msgid "Preferences..."
 msgstr "偏好設定…"
 
@@ -3686,7 +3686,7 @@ msgstr "預覽"
 msgid "Previous"
 msgstr "往前"
 
-#: core/globalshortcuts.cpp:51 ../bin/src/ui_mainwindow.h:649
+#: core/globalshortcuts.cpp:51 ../bin/src/ui_mainwindow.h:648
 #: wiimotedev/wiimotesettingspage.cpp:100
 msgid "Previous track"
 msgstr "上一首歌曲"
@@ -3725,16 +3725,16 @@ msgstr "品質"
 msgid "Querying device..."
 msgstr "查詢裝置..."
 
-#: ../bin/src/ui_queuemanager.h:125 ../bin/src/ui_mainwindow.h:712
+#: ../bin/src/ui_queuemanager.h:125 ../bin/src/ui_mainwindow.h:711
 msgid "Queue Manager"
 msgstr "佇列管理員"
 
-#: ui/mainwindow.cpp:1366
+#: ui/mainwindow.cpp:1367
 msgid "Queue selected tracks"
 msgstr "將選取的歌曲加入佇列中"
 
 #: globalsearch/globalsearchview.cpp:441 library/libraryview.cpp:375
-#: ui/mainwindow.cpp:1364
+#: ui/mainwindow.cpp:1365
 msgid "Queue track"
 msgstr "將歌曲加入佇列中"
 
@@ -3742,11 +3742,11 @@ msgstr "將歌曲加入佇列中"
 msgid "Radio (equal loudness for all tracks)"
 msgstr "廣播 (為所有歌曲取得相同音量)"
 
-#: internet/groovesharkservice.cpp:593
+#: internet/groovesharkservice.cpp:595
 msgid "Radios"
 msgstr ""
 
-#: core/backgroundstreams.cpp:31 ../bin/src/ui_mainwindow.h:689
+#: core/backgroundstreams.cpp:31 ../bin/src/ui_mainwindow.h:688
 msgid "Rain"
 msgstr "下雨"
 
@@ -3778,7 +3778,7 @@ msgstr "評價目前的歌曲 4 顆星"
 msgid "Rate the current song 5 stars"
 msgstr "評價目前的歌曲 5 顆星"
 
-#: playlist/playlist.cpp:1219 ../bin/src/ui_edittagdialog.h:675
+#: playlist/playlist.cpp:1214 ../bin/src/ui_edittagdialog.h:675
 msgid "Rating"
 msgstr "評分"
 
@@ -3790,7 +3790,7 @@ msgstr "真的要取消？"
 msgid "Redirect limit exceeded, verify server configuration."
 msgstr ""
 
-#: internet/groovesharkservice.cpp:547
+#: internet/groovesharkservice.cpp:549
 msgid "Refresh"
 msgstr "重新整理"
 
@@ -3836,7 +3836,7 @@ msgstr "移除"
 msgid "Remove action"
 msgstr "刪除功能"
 
-#: ../bin/src/ui_mainwindow.h:721
+#: ../bin/src/ui_mainwindow.h:720
 msgid "Remove duplicates from playlist"
 msgstr "從播放清單中移除重複的"
 
@@ -3844,52 +3844,52 @@ msgstr "從播放清單中移除重複的"
 msgid "Remove folder"
 msgstr "移除資料夾"
 
-#: internet/groovesharkservice.cpp:534
+#: internet/groovesharkservice.cpp:536
 msgid "Remove from My Music"
 msgstr ""
 
-#: internet/groovesharkservice.cpp:531
+#: internet/groovesharkservice.cpp:533
 msgid "Remove from favorites"
 msgstr "從我的最愛中刪除"
 
-#: internet/groovesharkservice.cpp:528 ../bin/src/ui_mainwindow.h:696
+#: internet/groovesharkservice.cpp:530 ../bin/src/ui_mainwindow.h:695
 msgid "Remove from playlist"
 msgstr "從播放清單移除"
 
-#: playlist/playlisttabbar.cpp:169
+#: playlist/playlisttabbar.cpp:174
 msgid "Remove playlist"
 msgstr ""
 
-#: playlist/playlistlistcontainer.cpp:310
+#: playlist/playlistlistcontainer.cpp:314
 msgid "Remove playlists"
 msgstr ""
 
-#: internet/groovesharkservice.cpp:1537
+#: internet/groovesharkservice.cpp:1539
 msgid "Removing songs from My Music"
 msgstr ""
 
-#: internet/groovesharkservice.cpp:1487
+#: internet/groovesharkservice.cpp:1489
 msgid "Removing songs from favorites"
 msgstr ""
 
-#: internet/groovesharkservice.cpp:1335
+#: internet/groovesharkservice.cpp:1337
 #, qt-format
 msgid "Rename \"%1\" playlist"
 msgstr ""
 
-#: internet/groovesharkservice.cpp:524
+#: internet/groovesharkservice.cpp:526
 msgid "Rename Grooveshark playlist"
 msgstr "重命名 Grooveshark 播放清單"
 
-#: playlist/playlisttabbar.cpp:134
+#: playlist/playlisttabbar.cpp:137
 msgid "Rename playlist"
 msgstr "變更播放清單名稱"
 
-#: playlist/playlisttabbar.cpp:52
+#: playlist/playlisttabbar.cpp:55
 msgid "Rename playlist..."
 msgstr "重新命名播放清單"
 
-#: ../bin/src/ui_mainwindow.h:672
+#: ../bin/src/ui_mainwindow.h:671
 msgid "Renumber tracks in this order..."
 msgstr "按此順序重新為歌曲編號..."
 
@@ -3960,19 +3960,19 @@ msgstr "限制為 ASCII 字符"
 msgid "Resume playback on start"
 msgstr ""
 
-#: internet/groovesharkservice.cpp:756
+#: internet/groovesharkservice.cpp:758
 msgid "Retrieving Grooveshark My Music songs"
 msgstr ""
 
-#: internet/groovesharkservice.cpp:724
+#: internet/groovesharkservice.cpp:726
 msgid "Retrieving Grooveshark favorites songs"
 msgstr ""
 
-#: internet/groovesharkservice.cpp:661
+#: internet/groovesharkservice.cpp:663
 msgid "Retrieving Grooveshark playlists"
 msgstr ""
 
-#: ../data/oauthsuccess.html:3
+#: ../data/oauthsuccess.html:5
 msgid "Return to Clementine"
 msgstr ""
 
@@ -4006,7 +4006,7 @@ msgstr "安全地移除裝置"
 msgid "Safely remove the device after copying"
 msgstr "在複製之後，安全的移除裝置"
 
-#: playlist/playlist.cpp:1227 ../bin/src/ui_edittagdialog.h:672
+#: playlist/playlist.cpp:1222 ../bin/src/ui_edittagdialog.h:672
 msgid "Sample rate"
 msgstr "取樣頻率"
 
@@ -4030,11 +4030,11 @@ msgstr "儲存封面到磁碟..."
 msgid "Save image"
 msgstr "儲存圖片"
 
-#: playlist/playlistlistcontainer.cpp:74 playlist/playlistmanager.cpp:235
+#: playlist/playlistlistcontainer.cpp:74 playlist/playlistmanager.cpp:240
 msgid "Save playlist"
 msgstr "儲存播放清單"
 
-#: playlist/playlisttabbar.cpp:53 ../bin/src/ui_mainwindow.h:704
+#: playlist/playlisttabbar.cpp:56 ../bin/src/ui_mainwindow.h:703
 msgid "Save playlist..."
 msgstr "儲存播放清單"
 
@@ -4070,7 +4070,7 @@ msgstr "可變取樣率規格 (SSR)"
 msgid "Scale size"
 msgstr ""
 
-#: playlist/playlist.cpp:1223 ../bin/src/ui_edittagdialog.h:673
+#: playlist/playlist.cpp:1218 ../bin/src/ui_edittagdialog.h:673
 msgid "Score"
 msgstr "分數"
 
@@ -4125,7 +4125,7 @@ msgstr "搜尋模式"
 msgid "Search options"
 msgstr "搜尋選項"
 
-#: internet/groovesharkservice.cpp:567 internet/soundcloudservice.cpp:104
+#: internet/groovesharkservice.cpp:569 internet/soundcloudservice.cpp:104
 #: internet/spotifyservice.cpp:347
 msgid "Search results"
 msgstr "搜尋結果"
@@ -4135,7 +4135,7 @@ msgstr "搜尋結果"
 msgid "Search terms"
 msgstr "搜尋條件"
 
-#: internet/groovesharkservice.cpp:268
+#: internet/groovesharkservice.cpp:270
 msgid "Searching on Grooveshark"
 msgstr "在 Grooveshark 上搜尋"
 
@@ -4207,7 +4207,7 @@ msgstr ""
 msgid "Service offline"
 msgstr "服務離線"
 
-#: ui/mainwindow.cpp:1393
+#: ui/mainwindow.cpp:1394
 #, qt-format
 msgid "Set %1 to \"%2\"..."
 msgstr "設定 %1 到「%2」..."
@@ -4216,7 +4216,7 @@ msgstr "設定 %1 到「%2」..."
 msgid "Set the volume to <value> percent"
 msgstr "設定音量到百分之<value>"
 
-#: ../bin/src/ui_mainwindow.h:673
+#: ../bin/src/ui_mainwindow.h:672
 msgid "Set value for all selected tracks..."
 msgstr "為所有選擇的歌曲設定音量..."
 
@@ -4356,7 +4356,7 @@ msgstr "隨機播放專輯"
 msgid "Shuffle all"
 msgstr "隨機播放所有歌曲"
 
-#: ../bin/src/ui_mainwindow.h:680
+#: ../bin/src/ui_mainwindow.h:679
 msgid "Shuffle playlist"
 msgstr "隨機排列播放清單"
 
@@ -4396,7 +4396,7 @@ msgstr "強節奏流行音樂"
 msgid "Skip backwards in playlist"
 msgstr "跳至播放清單開頭"
 
-#: playlist/playlist.cpp:1221 ../bin/src/ui_edittagdialog.h:669
+#: playlist/playlist.cpp:1216 ../bin/src/ui_edittagdialog.h:669
 msgid "Skip count"
 msgstr "略過計數"
 
@@ -4464,7 +4464,7 @@ msgstr "歌曲排序方式"
 msgid "Sorting"
 msgstr "分類"
 
-#: playlist/playlist.cpp:1236
+#: playlist/playlist.cpp:1231
 msgid "Source"
 msgstr "來源"
 
@@ -4508,7 +4508,7 @@ msgstr "開始播放目前播放清單"
 msgid "Start transcoding"
 msgstr "開始轉碼"
 
-#: internet/groovesharkservice.cpp:568 internet/soundcloudservice.cpp:105
+#: internet/groovesharkservice.cpp:570 internet/soundcloudservice.cpp:105
 #: internet/spotifyservice.cpp:348
 msgid ""
 "Start typing something on the search box above to fill this search results "
@@ -4524,20 +4524,20 @@ msgstr "標記星號 %1"
 msgid "Starting..."
 msgstr "開啟..."
 
-#: internet/groovesharkservice.cpp:596
+#: internet/groovesharkservice.cpp:598
 msgid "Stations"
 msgstr ""
 
-#: core/globalshortcuts.cpp:48 ../bin/src/ui_mainwindow.h:653
+#: core/globalshortcuts.cpp:48 ../bin/src/ui_mainwindow.h:652
 #: wiimotedev/wiimotesettingspage.cpp:102
 msgid "Stop"
 msgstr "停止"
 
 #: wiimotedev/wiimotesettingspage.cpp:110
 msgid "Stop after"
-msgstr ""
+msgstr "在...之後停止"
 
-#: ui/mainwindow.cpp:489 ../bin/src/ui_mainwindow.h:659
+#: ui/mainwindow.cpp:489 ../bin/src/ui_mainwindow.h:658
 msgid "Stop after this track"
 msgstr "在這首歌之後停止"
 
@@ -4553,7 +4553,7 @@ msgstr "在目前這首歌之後停止"
 msgid "Stopped"
 msgstr "已停止"
 
-#: core/song.cpp:341
+#: core/song.cpp:353
 msgid "Stream"
 msgstr "串流"
 
@@ -4567,7 +4567,7 @@ msgstr ""
 msgid "Streaming membership"
 msgstr "串流成員"
 
-#: internet/groovesharkservice.cpp:627
+#: internet/groovesharkservice.cpp:629
 msgid "Subscribed playlists"
 msgstr ""
 
@@ -4579,7 +4579,7 @@ msgstr ""
 msgid "Subsonic"
 msgstr ""
 
-#: ../data/oauthsuccess.html:34
+#: ../data/oauthsuccess.html:36
 msgid "Success!"
 msgstr ""
 
@@ -4677,14 +4677,14 @@ msgstr "目前播放歌曲的專輯封面"
 msgid "The directory %1 is not valid"
 msgstr "目錄%1是無效的"
 
-#: playlist/playlistmanager.cpp:161 playlist/playlistmanager.cpp:179
+#: playlist/playlistmanager.cpp:166 playlist/playlistmanager.cpp:184
 #, qt-format
 msgid "The playlist '%1' was empty or could not be loaded."
-msgstr ""
+msgstr "播放清單 '%1' 為空白或無法讀取。"
 
 #: smartplaylists/searchtermwidget.cpp:330
 msgid "The second value must be greater than the first one!"
-msgstr ""
+msgstr "第二個值必須大於第一個！"
 
 #: ui/coverfromurldialog.cpp:71
 msgid "The site you requested does not exist!"
@@ -4700,11 +4700,11 @@ msgid ""
 "license key. Visit subsonic.org for details."
 msgstr ""
 
-#: ui/mainwindow.cpp:2082
+#: ui/mainwindow.cpp:2083
 msgid ""
 "The version of Clementine you've just updated to requires a full library "
 "rescan because of the new features listed below:"
-msgstr ""
+msgstr "方才更新的 Clementine 因為以下新的功能，需要對音樂庫做完整的重新掃描："
 
 #: library/libraryview.cpp:529
 msgid "There are other songs in this album"
@@ -4727,21 +4727,21 @@ msgstr ""
 msgid ""
 "There were problems copying some songs.  The following files could not be "
 "copied:"
-msgstr ""
+msgstr "複製歌曲時發生問題，以下檔案將無法複製："
 
 #: ui/organiseerrordialog.cpp:61
 msgid ""
 "There were problems deleting some songs.  The following files could not be "
 "deleted:"
-msgstr ""
+msgstr "刪除歌曲時發生問題，以下檔案將無法刪除："
 
 #: devices/deviceview.cpp:389
 msgid ""
 "These files will be deleted from the device, are you sure you want to "
 "continue?"
-msgstr ""
+msgstr "這些檔案將從裝置上被移除，你確定你要繼續？"
 
-#: library/libraryview.cpp:609 ui/mainwindow.cpp:1905 widgets/fileview.cpp:188
+#: library/libraryview.cpp:609 ui/mainwindow.cpp:1906 widgets/fileview.cpp:188
 msgid ""
 "These files will be permanently deleted from disk, are you sure you want to "
 "continue?"
@@ -4765,7 +4765,7 @@ msgstr "第三個層次"
 msgid ""
 "This action will create a database which could be as big as 150 MB.\n"
 "Do you want to continue anyway?"
-msgstr ""
+msgstr "這項動作將新增一個容量大約 150MB 的資料庫，仍然要繼續？"
 
 #: internet/magnatunedownloaddialog.cpp:175
 msgid "This album is not available in the requested format"
@@ -4775,20 +4775,20 @@ msgstr "這張專輯中不提供所要求的格式"
 msgid ""
 "This device must be connected and opened before Clementine can see what file"
 " formats it supports."
-msgstr ""
+msgstr "裝置必須在 Clementine 發現可支援的檔案格式前連接並開啟。"
 
 #: ../bin/src/ui_deviceproperties.h:375
 msgid "This device supports the following file formats:"
-msgstr ""
+msgstr "裝置支援以下檔案格式："
 
 #: devices/devicemanager.cpp:566 devices/devicemanager.cpp:574
 msgid "This device will not work properly"
-msgstr ""
+msgstr "裝置將無法正常運作"
 
 #: devices/devicemanager.cpp:567
 msgid ""
 "This is an MTP device, but you compiled Clementine without libmtp support."
-msgstr ""
+msgstr "這是一個 MTP 裝置，但您編譯的 Clementine 卻為包含 libmtp 支援。"
 
 #: devices/devicemanager.cpp:575
 msgid "This is an iPod, but you compiled Clementine without libgpod support."
@@ -4798,6 +4798,10 @@ msgstr "這是一個 iPod，但是您編譯 Clementine 卻未包含 libgpod 支�
 msgid ""
 "This is the first time you have connected this device.  Clementine will now "
 "scan the device to find music files - this may take some time."
+msgstr "這是您第一次連接這個裝置，Clementine 將掃描裝置並搜尋音樂檔案－將需要一些時間。"
+
+#: playlist/playlisttabbar.cpp:186
+msgid "This option can be changed in the \"Behavior\" preferences"
 msgstr ""
 
 #: internet/lastfmservice.cpp:435
@@ -4807,25 +4811,25 @@ msgstr "此串流音樂是只針對付費用戶"
 #: devices/devicemanager.cpp:587
 #, qt-format
 msgid "This type of device is not supported: %1"
-msgstr ""
+msgstr "這種裝置不被支援： %1"
 
 #: ../bin/src/ui_songinfosettingspage.h:185
 msgid "Timeout"
 msgstr "逾時"
 
-#: playlist/playlist.cpp:1206 ui/organisedialog.cpp:54
+#: playlist/playlist.cpp:1201 ui/organisedialog.cpp:54
 #: ui/qtsystemtrayicon.cpp:248 ../bin/src/ui_about.h:142
 #: ../bin/src/ui_edittagdialog.h:682 ../bin/src/ui_trackselectiondialog.h:211
 msgid "Title"
 msgstr "標題"
 
-#: internet/groovesharkservice.cpp:1016
+#: internet/groovesharkservice.cpp:1018
 msgid ""
 "To start Grooveshark radio, you should first listen to a few other "
 "Grooveshark songs"
 msgstr ""
 
-#: core/utilities.cpp:125 core/utilities.cpp:141
+#: core/utilities.cpp:126 core/utilities.cpp:142
 msgid "Today"
 msgstr "今日"
 
@@ -4837,11 +4841,11 @@ msgstr ""
 msgid "Toggle fullscreen"
 msgstr "切換全螢幕模式"
 
-#: ui/mainwindow.cpp:1368
+#: ui/mainwindow.cpp:1369
 msgid "Toggle queue status"
 msgstr "切換佇列狀態"
 
-#: ../bin/src/ui_mainwindow.h:719
+#: ../bin/src/ui_mainwindow.h:718
 msgid "Toggle scrobbling"
 msgstr "切換 scrobbling"
 
@@ -4849,7 +4853,7 @@ msgstr "切換 scrobbling"
 msgid "Toggle visibility for the pretty on-screen-display"
 msgstr ""
 
-#: core/utilities.cpp:143
+#: core/utilities.cpp:144
 msgid "Tomorrow"
 msgstr ""
 
@@ -4867,18 +4871,18 @@ msgstr ""
 
 #: covers/coversearchstatisticsdialog.cpp:71
 msgid "Total bytes transferred"
-msgstr ""
+msgstr "總傳輸位元組"
 
 #: covers/coversearchstatisticsdialog.cpp:68
 msgid "Total network requests made"
-msgstr ""
+msgstr "總發送網路請求"
 
-#: playlist/playlist.cpp:1210 ui/organisedialog.cpp:62
+#: playlist/playlist.cpp:1205 ui/organisedialog.cpp:62
 #: ../bin/src/ui_edittagdialog.h:683 ../bin/src/ui_trackselectiondialog.h:213
 msgid "Track"
 msgstr "歌曲"
 
-#: ../bin/src/ui_transcodedialog.h:202 ../bin/src/ui_mainwindow.h:698
+#: ../bin/src/ui_transcodedialog.h:202 ../bin/src/ui_mainwindow.h:697
 msgid "Transcode Music"
 msgstr "音樂轉碼"
 
@@ -4893,13 +4897,13 @@ msgstr "轉碼"
 #: transcoder/transcoder.cpp:312
 #, qt-format
 msgid "Transcoding %1 files using %2 threads"
-msgstr ""
+msgstr "轉碼 %1 個檔案使用 %2 個進程"
 
 #: ../bin/src/ui_transcoderoptionsdialog.h:54
 msgid "Transcoding options"
 msgstr "轉碼選項"
 
-#: core/song.cpp:338
+#: core/song.cpp:350
 msgid "TrueAudio"
 msgstr ""
 
@@ -4940,9 +4944,9 @@ msgstr "超寬頻 (UWB)"
 msgid "Unable to download %1 (%2)"
 msgstr ""
 
-#: core/song.cpp:345 library/librarymodel.cpp:308 library/librarymodel.cpp:313
+#: core/song.cpp:357 library/librarymodel.cpp:308 library/librarymodel.cpp:313
 #: library/librarymodel.cpp:970 playlist/playlistdelegates.cpp:309
-#: playlist/playlistmanager.cpp:500 playlist/playlistmanager.cpp:503
+#: playlist/playlistmanager.cpp:505 playlist/playlistmanager.cpp:508
 #: ui/albumcoverchoicecontroller.cpp:110 ui/edittagdialog.cpp:424
 #: ui/edittagdialog.cpp:465
 msgid "Unknown"
@@ -4968,7 +4972,7 @@ msgstr ""
 msgid "Upcoming Concerts"
 msgstr ""
 
-#: internet/groovesharkservice.cpp:1198
+#: internet/groovesharkservice.cpp:1200
 msgid "Update Grooveshark playlist"
 msgstr "更新 Grooveshark 播放清單"
 
@@ -4976,7 +4980,7 @@ msgstr "更新 Grooveshark 播放清單"
 msgid "Update all podcasts"
 msgstr "更新全部的 podcasts"
 
-#: ../bin/src/ui_mainwindow.h:710
+#: ../bin/src/ui_mainwindow.h:709
 msgid "Update changed library folders"
 msgstr "更新改變的音樂庫資料夾"
 
@@ -5082,12 +5086,12 @@ msgstr "使用音量正常化"
 msgid "Used"
 msgstr "已用"
 
-#: internet/groovesharkservice.cpp:402
+#: internet/groovesharkservice.cpp:404
 #, qt-format
 msgid "User %1 doesn't have a Grooveshark Anywhere account"
 msgstr ""
 
-#: ui/settingsdialog.cpp:147
+#: ui/settingsdialog.cpp:145
 msgid "User interface"
 msgstr "使用者介面"
 
@@ -5114,7 +5118,7 @@ msgid "Variable bit rate"
 msgstr "可變位元率"
 
 #: globalsearch/globalsearchmodel.cpp:104 library/librarymodel.cpp:241
-#: playlist/playlistmanager.cpp:515 ui/albumcovermanager.cpp:266
+#: playlist/playlistmanager.cpp:520 ui/albumcovermanager.cpp:266
 msgid "Various artists"
 msgstr "各種演出者"
 
@@ -5131,7 +5135,7 @@ msgstr "檢視"
 msgid "Visualization mode"
 msgstr "視覺化模式"
 
-#: ../bin/src/ui_mainwindow.h:711 ui/dbusscreensaver.cpp:35
+#: ../bin/src/ui_mainwindow.h:710 ui/dbusscreensaver.cpp:35
 msgid "Visualizations"
 msgstr "視覺化"
 
@@ -5161,11 +5165,11 @@ msgstr "WAV"
 msgid "WMA"
 msgstr "WMA"
 
-#: ../bin/src/ui_behavioursettingspage.h:194
+#: playlist/playlisttabbar.cpp:182 ../bin/src/ui_behavioursettingspage.h:194
 msgid "Warn me when closing a playlist tab"
 msgstr ""
 
-#: core/song.cpp:337
+#: core/song.cpp:349
 msgid "Wav"
 msgstr "Wav"
 
@@ -5245,7 +5249,7 @@ msgstr ""
 msgid "Windows Media 64k"
 msgstr ""
 
-#: core/song.cpp:327
+#: core/song.cpp:339
 msgid "Windows Media audio"
 msgstr ""
 
@@ -5259,7 +5263,7 @@ msgid ""
 "well?"
 msgstr ""
 
-#: ui/mainwindow.cpp:2087
+#: ui/mainwindow.cpp:2088
 msgid "Would you like to run a full rescan right now?"
 msgstr ""
 
@@ -5271,7 +5275,7 @@ msgstr ""
 msgid "Wrong username or password."
 msgstr ""
 
-#: playlist/playlist.cpp:1212 ui/organisedialog.cpp:65
+#: playlist/playlist.cpp:1207 ui/organisedialog.cpp:65
 #: ../bin/src/ui_groupbydialog.h:135 ../bin/src/ui_groupbydialog.h:148
 #: ../bin/src/ui_groupbydialog.h:161 ../bin/src/ui_edittagdialog.h:687
 #: ../bin/src/ui_trackselectiondialog.h:212
@@ -5287,7 +5291,7 @@ msgstr "年份 - 專輯"
 msgid "Years"
 msgstr "年"
 
-#: core/utilities.cpp:127
+#: core/utilities.cpp:128
 msgid "Yesterday"
 msgstr "昨天"
 
@@ -5295,13 +5299,13 @@ msgstr "昨天"
 msgid "You are about to download the following albums"
 msgstr "您將要下載以下專輯"
 
-#: playlist/playlistlistcontainer.cpp:311
+#: playlist/playlistlistcontainer.cpp:315
 #, qt-format
 msgid ""
 "You are about to remove %1 playlists from your favorites, are you sure?"
 msgstr ""
 
-#: playlist/playlisttabbar.cpp:170
+#: playlist/playlisttabbar.cpp:177
 msgid ""
 "You are about to remove a playlist which is not part of your favorite playlists: the playlist will be deleted (this action cannot be undone). \n"
 "Are you sure you want to continue?"
@@ -5519,9 +5523,9 @@ msgstr ""
 msgid "in the last"
 msgstr ""
 
-#: playlist/playlistview.cpp:206 ui/edittagdialog.cpp:460
 #: internet/spotifysettingspage.cpp:60 internet/spotifysettingspage.cpp:61
-#: internet/spotifysettingspage.cpp:62
+#: internet/spotifysettingspage.cpp:62 playlist/playlistview.cpp:206
+#: ui/edittagdialog.cpp:460
 msgid "kbps"
 msgstr "kbps"
 
