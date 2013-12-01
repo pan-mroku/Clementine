@@ -62,7 +62,7 @@ private slots:
   void LyricsFetched();
 
 private:
-  int ApplyExtractRule(const Rule& rule, QString* content) const;
+  bool ApplyExtractRule(const Rule& rule, QString* content) const;
   void ApplyExcludeRule(const Rule& rule, QString* content) const;
 
   static QString ExtractUrl(const QString& source, const Rule& rule);

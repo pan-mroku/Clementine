@@ -65,13 +65,16 @@ void UltimateLyricsProvider::FetchInfo(int id, const Song& metadata) {
 
 void UltimateLyricsProvider::LyricsFetched() {
   QNetworkReply* reply = qobject_cast<QNetworkReply*>(sender());
-  if (!reply)
+  if (!reply) {
+    url_hop_ = false;
     return;
+  }
 
   int id = requests_.take(reply);
   reply->deleteLater();
 
   if (reply->error() != QNetworkReply::NoError) {
+    url_hop_ = false;
     emit Finished(id);
     return;
   }
@@ -80,6 +83,7 @@ void UltimateLyricsProvider::LyricsFetched() {
   QVariant redirect_target = reply->attribute(QNetworkRequest::RedirectionTargetAttribute);
   if (redirect_target.isValid()) {
     if (redirect_count_ >= kRedirectLimit) {
+      url_hop_ = false;
       emit Finished(id);
       return;
     }
@@ -106,48 +110,45 @@ void UltimateLyricsProvider::LyricsFetched() {
   foreach (const QString& indicator, invalid_indicators_) {
     if (original_content.contains(indicator)) {
       qLog(Debug) << "Found invalid indicator" << indicator;
+      url_hop_ = false;
       emit Finished(id);
       return;
     }
   }
 
-  if(!url_hop_)
-    {
-      // Apply extract rules
-      foreach (const Rule& rule, extract_rules_) {
-        // Modify the rule for this request's metadata
-        Rule rule_copy(rule);
-        for (Rule::iterator it = rule_copy.begin() ; it != rule_copy.end() ; ++it) {
-          ReplaceFields(metadata_, &it->first);
-        }
+  if (!url_hop_) {
+    // Apply extract rules
+    foreach (const Rule& rule, extract_rules_) {
+      // Modify the rule for this request's metadata
+      Rule rule_copy(rule);
+      for (Rule::iterator it = rule_copy.begin() ; it != rule_copy.end() ; ++it) {
+        ReplaceFields(metadata_, &it->first);
+      }
 
-        QString content = original_content;
-        if (ApplyExtractRule(rule_copy, &content))
-          {
-            url_hop_=true;
-            QUrl url(content);
-            qLog(Debug)<<"Next url hop: "<<url;
-            QNetworkReply* reply = network_->get(QNetworkRequest(url));
-            requests_[reply] = id;
-            connect(reply, SIGNAL(finished()), SLOT(LyricsFetched()));
-            return;
-          }
-        else
-          qLog(Debug) << "Extract rule" << rule_copy << "matched" << content.length();
-
-        if (!content.isEmpty()) {
-          lyrics = content;
-          break;
-        }
+      QString content = original_content;
+      if (ApplyExtractRule(rule_copy, &content)) {
+        url_hop_ = true;
+        QUrl url(content);
+        qLog(Debug) << "Next url hop: " << url;
+        QNetworkReply* reply = network_->get(QNetworkRequest(url));
+        requests_[reply] = id;
+        connect(reply, SIGNAL(finished()), SLOT(LyricsFetched()));
+        return;
       }
 
       // Apply exclude rules
       foreach (const Rule& rule, exclude_rules_) {
         ApplyExcludeRule(rule, &lyrics);
       }
+
+      if (!content.isEmpty()) {
+        lyrics = content;
+        break;
+      }
     }
-  else
-    lyrics=original_content;
+  } else {
+    lyrics = original_content;
+  }
 
   if (!lyrics.isEmpty()) {
     CollapsibleInfoPane::Data data;
@@ -168,18 +169,16 @@ void UltimateLyricsProvider::LyricsFetched() {
 
     emit InfoReady(id, data);
   }
+  url_hop_ = false;
   emit Finished(id);
-
-  url_hop_=false;
 }
 
-int UltimateLyricsProvider::ApplyExtractRule(const Rule& rule, QString* content) const {
+bool UltimateLyricsProvider::ApplyExtractRule(const Rule& rule, QString* content) const {
   foreach (const RuleItem& item, rule) {
-    qLog(Debug)<<"ApplyExtractRule"<<item.first<<" "<<item.second;
     if (item.second.isNull()) {
-      if (item.first.startsWith("http")){
-        *content=ExtractUrl(*content, rule);
-        return 1;
+      if (item.first.startsWith("http://") && item.second.isNull()) {
+        *content = ExtractUrl(*content, rule);
+        return true;
       } else {
         *content = ExtractXmlTag(*content, item.first);        
       }
@@ -187,19 +186,20 @@ int UltimateLyricsProvider::ApplyExtractRule(const Rule& rule, QString* content)
       *content = Extract(*content, item.first, item.second);
     }
   }
-  return 0;
+  return false;
 }
 
 QString UltimateLyricsProvider::ExtractUrl(const QString& source, const Rule& rule)
 {
-  QString url="",id="";
+  QString url;
+  QString id;
 
   foreach(const RuleItem& item, rule)
     {
-      if (item.second.isNull())
-          url=item.first;
+      if (item.first.startsWith("http://") && item.second.isNull())
+        url = item.first;
       else
-        id=Extract(source, item.first,item.second);
+        id = Extract(source, item.first,item.second);
     }
 
   url.replace("{id}", id);
