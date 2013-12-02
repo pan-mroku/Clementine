@@ -189,18 +189,16 @@ bool UltimateLyricsProvider::ApplyExtractRule(const Rule& rule, QString* content
   return false;
 }
 
-QString UltimateLyricsProvider::ExtractUrl(const QString& source, const Rule& rule)
-{
+QString UltimateLyricsProvider::ExtractUrl(const QString& source, const Rule& rule) {
   QString url;
   QString id;
 
-  foreach(const RuleItem& item, rule)
-    {
-      if (item.first.startsWith("http://") && item.second.isNull())
-        url = item.first;
-      else
-        id = Extract(source, item.first,item.second);
-    }
+  foreach(const RuleItem& item, rule) {
+    if (item.first.startsWith("http://") && item.second.isNull())
+      url = item.first;
+    else
+      id = Extract(source, item.first,item.second);
+  }
 
   url.replace("{id}", id);
 
